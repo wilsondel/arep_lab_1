@@ -10,7 +10,7 @@ import java.net.URL;
 public class ClientTest {
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String GET_URL = "http://www.omdbapi.com/?apikey=64bffcc9&t=indiana";
+    private static final String GET_URL = "http://localhost:35000/infomovie?t=indiana";
 
     public static void main(String[] args) throws IOException {
 
