@@ -7,16 +7,22 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * Allow to make requests to the API
+ */
 public class HttpConnection {
 
     private static final String USER_AGENT = "Mozilla/5.0";
 
 
+    /**
+     * @param query Value of the title, example: t=indiana
+     * @return JSON with the information of the movie
+     * @throws IOException
+     */
     public static String getAPIInfo(String query) throws IOException {
-//        String GET_URL = "http://www.omdbapi.com/?apikey=64bffcc9&t=indiana";
         String GET_URL = "http://www.omdbapi.com/?apikey=64bffcc9&" + query;
         URL obj = new URL(GET_URL);
-//        System.out.println("TEST " + obj);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);

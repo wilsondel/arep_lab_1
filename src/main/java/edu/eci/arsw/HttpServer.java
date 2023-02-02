@@ -5,9 +5,17 @@ import edu.eci.arsw.service.HttpConnection;
 
 import java.net.*;
 import java.io.*;
+
+/**
+ * Creates a mini web server, you can access it in localhost:35000
+ */
 public class HttpServer {
 
 
+    /**
+     * @param args
+     * @throws IOException
+     */
 public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
         try {
@@ -81,14 +89,19 @@ public static void main(String[] args) throws IOException {
     }
 
     public static String jsonSimple(String jsonResponse) {
-        return  "HTTP/1.1 200 OK\r\n" +
-                "Content-Type: text/json" +
-                "\r\n"
-                +
-                jsonResponse;
+//        return  "HTTP/1.1 200 OK\r\n" +
+//                "Content-Type: application/json" +
+//                "\r\n"
+//                +
+//                jsonResponse;
+        return  jsonResponse;
     }
 
 
+    /**
+     * @param apiResponse JSON string response of the API
+     * @return a String representing the html response
+     */
     public static String htmlWithForms(String apiResponse) {
         System.out.println("RESPOINSEEE :" + apiResponse);
 

@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * Allow to make request to the mini web server created with HttpServer
+ */
 public class ClientJavaTesting {
 
     private static final String USER_AGENT = "Mozilla/5.0";
