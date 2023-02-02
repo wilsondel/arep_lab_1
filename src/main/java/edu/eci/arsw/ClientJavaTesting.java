@@ -3,11 +3,10 @@ package edu.eci.arsw;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class ClientTest {
+public class ClientJavaTesting {
 
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String GET_URL = "http://localhost:35000/infomovie?t=indiana";
