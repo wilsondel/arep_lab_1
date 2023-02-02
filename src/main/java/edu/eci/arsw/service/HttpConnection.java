@@ -1,4 +1,4 @@
-package edu.eci.arsw;
+package edu.eci.arsw.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;

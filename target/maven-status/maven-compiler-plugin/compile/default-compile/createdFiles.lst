@@ -1,4 +1,5 @@
-edu/eci/arsw/Cache.class
-edu/eci/arsw/HttpConnection.class
-edu/eci/arsw/HttpServer.class
-edu/eci/arsw/ClientTest.class
+edu\eci\arsw\HttpServer.class
+edu\eci\arsw\repository\Cache.class
+edu\eci\arsw\ClientTest.class
+edu\eci\arsw\repository\ICache.class
+edu\eci\arsw\service\HttpConnection.class

@@ -1,9 +1,9 @@
-package edu.eci.arsw;
+package edu.eci.arsw.repository;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cache {
+public class Cache implements  ICache {
 
     private static Map<String, String> cache= new HashMap<String, String>();
 

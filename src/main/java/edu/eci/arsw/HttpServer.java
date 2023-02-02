@@ -1,5 +1,8 @@
 package edu.eci.arsw;
 
+import edu.eci.arsw.repository.Cache;
+import edu.eci.arsw.service.HttpConnection;
+
 import java.net.*;
 import java.io.*;
 public class HttpServer {
