@@ -66,7 +66,7 @@ public static void main(String[] args) throws IOException {
 
             }
 
-            outputLine = jsonSimple(apiResponse);
+            outputLine = htmlWithForms(apiResponse);
 //            if (!flag) outputLine = htmlWithForms(apiResponse);
 //            else outputLine = jsonSimple(apiResponse);
 
@@ -82,7 +82,7 @@ public static void main(String[] args) throws IOException {
 
     public static String jsonSimple(String jsonResponse) {
         return  "HTTP/1.1 200 OK\r\n" +
-                "Content-Type: text/html" +
+                "Content-Type: text/json" +
                 "\r\n"
                 +
                 jsonResponse;
