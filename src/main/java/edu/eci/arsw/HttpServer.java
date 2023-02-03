@@ -58,11 +58,6 @@ public static void main(String[] args) throws IOException {
             URL basePathForm = new URL("http://www.localhost:35000" + path); //http://www.localhost:35000/?t=indiana
             String baseQueryForm = basePathForm.getQuery();
 
-            boolean flag = false;
-            if (basePathForm.getPath().contains("infomovie")) {
-                flag = true;
-            }
-
             String apiResponse = "";
             if (baseQueryForm != null) {
                 if (Cache.hasQuery(baseQueryForm)) {
@@ -75,8 +70,6 @@ public static void main(String[] args) throws IOException {
             }
 
             outputLine = htmlWithForms(apiResponse);
-//            if (!flag) outputLine = htmlWithForms(apiResponse);
-//            else outputLine = jsonSimple(apiResponse);
 
             out.println(outputLine);
 
@@ -89,12 +82,11 @@ public static void main(String[] args) throws IOException {
     }
 
     public static String jsonSimple(String jsonResponse) {
-//        return  "HTTP/1.1 200 OK\r\n" +
-//                "Content-Type: application/json" +
-//                "\r\n"
-//                +
-//                jsonResponse;
-        return  jsonResponse;
+        return  "HTTP/1.1 200 OK\r\n" +
+                "Content-Type: application/json" +
+                "\r\n"
+                +
+                jsonResponse;
     }
 
 
